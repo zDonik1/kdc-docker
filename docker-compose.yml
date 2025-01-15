@@ -10,3 +10,4 @@ services:
     volumes:
       # This is needed otherwise there won't be enough entropy to generate a new kerberos realm
       - /dev/urandom:/dev/random
+      - ./data:/var/lib/krb5kdc/
