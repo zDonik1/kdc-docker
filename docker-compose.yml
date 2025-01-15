@@ -2,7 +2,7 @@ services:
   kdc:
     build:
       context: ./
-    # restart: always
+    restart: always
     env_file: kerberos.env
     ports:
       - "88:88"
